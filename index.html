@@ -98,7 +98,7 @@
         </div>
     </header>
     <!-- fin header -->
-    <!-- section 1 -->
+    <!-- section 1 - STORY -->
     <section class="section1 container position-relative my-5">
         <img class="position-absolute" style="top:0%; left:0%" src="./public/images/box-left-top.png" alt="lt">
         <img class="position-absolute" style="top:0%; right:0%" src="./public/images/box-right-top.png" alt="rt">
@@ -349,7 +349,7 @@
             </div>
     </section>
     <!-- fin section 1 -->
-    <!-- section 2 -->
+    <!-- section 2 - CHEFS -->
     <section class="section2">
         <h2>MEET <span>Our Chef</span></h2>
         <img src="./public/images/decoration_line.png" alt="deco">
@@ -373,7 +373,7 @@
         </div>
     </section>
     <!-- fin section 2 -->
-    <!-- section 3 -->
+    <!-- section 3 - BOOK -->
     <section class="section3 container position-relative my-5">
         <img class="position-absolute" style="top:0%; left:0%" src="./public/images/box-left-top-grey.png" alt="lt">
         <img class="position-absolute" style="top:0%; right:0%" src="./public/images/box-right-top-grey.png" alt="rt">
@@ -417,74 +417,80 @@
                     <button class="btn bg-bouton text-white my-3 mx-auto">BOOK NOW</button>
             </div>
         </form>
+        <!-- BLOG -->
         <div class="story text-center">
             <h2 class="mt-5">OUR <span>Blog</span></h2>
             <img src="./public/images/decoration_line.png" alt="deco">
         </div>
-        <div class="d-flex mx-10 my-5">
-            <div class="blog mr-10">
-                <div class="date">
-                    <img class="" src="./public/images/blog_img1.jpg" alt="blog1">
-                    <p class="bg-bouton text-white"><span>12</span>April2017/<span>20</span>Comments/<span>35</span>Likes</p>
+        <div class="blog row container">
+            <div class="blog row container">
+                <div class="col-6">
+                    <img src="./public/images/blog_img1.jpg" alt="">
+                    <div class="pl-5">
+                        <button class="btn btn-bouton" type="button"><span>12</span>April
+                            2017/ <span>20</span>Comment/ <span>35</span>Likes</button>
+                    </div>
+                    <h6>Lorem Ipsum</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
                 </div>
-                <div class="textblog">
-                    <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reiciendis deserunt minus eveniet.</p>
+                <div class="col-6 container">
+                    <img src="./public/images/blog_img2.jpg" alt="">
+                    <div class="pl-5">
+                        <button class="btn btn-bouton" type="button"><span>12</span>April
+                            2017/<span>20</span>Comment/<span>35</span>Likes</button>
+                    </div>
+                    <h6>Lorem Ipsum</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
                 </div>
+                <button type="button" class="date btn-bouton btn-lg d-flex mx-auto mb-5">Know More</button>
             </div>
-            <div class="blog mr-5">
-                <div class="date">
-                    <img class="" src="./public/images/blog_img2.jpg" alt="blog2">
-                    <p class="bg-bouton text-white"><span>12</span>April2017/<span>20</span>Comments/<span>35</span>Likes</p>
-                </div>
-                <div class="textblog">
-                    <h5>Lorem, ipsum.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reiciendis deserunt minus eveniet.</p>
-                </div>
-            </div>
-        </div>
-        <button class="btn bg-bouton text-white my-3 mx-30">KNOW MORE</button>
     </section>
-    <!-- section 4 -->
-    <section class="section4 container-fluid">
+    <!-- section 4 - CLIENT-->
+    <section class="section4">
         <div class="client text-center">
             <h2 class="mt-5">Client <span>Testimonials</span></h2>
             <img class="deco" src="./public/images/decoration_line.png" alt="deco">
-            <div class="row py-5 mx-30">
-                <div class="col-6 d-flex justify-content-center temoincont">
-                    <div class="cercle">
-                        <img class="rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
-                    </div>
-                    <div class="col-6 border border-white rounded py-4 mx-4">
-                        <h4 class="text-white px-2">Lorem, ipsum.</h4>
-                        <span class="text-bouton px-2">Manager</span>
-                        <p class="text-white px-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+            <div class="container-fluid d-flex my-5">
+                <div class="row py-5">
+                    <div class="col-6 d-flex ml-40 temoincont">
+                        <div class="cercle mr-5">
+                            <img class="rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
+                        </div>
+                        <div class="col-6 border border-white rounded">
+                            <h4 class="text-white">Lorem, ipsum.</h4>
+                            <span class="text-bouton">Manager</span>
+                            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center flex-row-reverse temoincont">
-                    <div class="cercle">
-                        <img class="rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
-                    </div>
-                    <div class="col-6 border border-white rounded py-4 mx-4">
-                        <h4 class="text-white px-2">Lorem, ipsum.</h4>
-                        <span class="text-bouton px-2">Manager</span>
-                        <p class="text-white px-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+                <div class="row py-5">
+                    <div class="col-6 d-flex mr-40 flex-row-reverse temoincont">
+                        <div class="cercle ml-5">
+                            <img class="rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
+                        </div>
+                        <div class="col-6 border border-white rounded">
+                            <h4 class="text-white">Lorem, ipsum.</h4>
+                            <span class="text-bouton">Manager</span>
+                            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- fin section 4 -->
-    <!-- section 5 -->
+    <!-- section 5 - CONTACT-->
     <section class="section5 container text-center py-5">
         <div class="contact py-5">
             <h2 class="mt-5">OUR <span>Contact</span></h2>
             <img class="pb-5" src="./public/images/decoration_line.png" alt="deco">
             <div class="icones">
                 <i class="fas fa-map-marker-alt"></i>
-                <p class="border-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolore.</p>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolore.</p>
+                <hr>
                 <i class="fas fa-phone-alt"></i>
-                <p class="border-bottom">+91254833544</p>
+                <p class="">+91254833544</p>
+                <hr>
                 <i class="fas fa-envelope"></i>
                 <p>abc@abc.com</p>
             </div>
@@ -493,18 +499,18 @@
     <!-- fin section 5 -->
     <!-- footer -->
     <footer class="container-fluid text-light">
-        <div class="d-flex justify-content-center align-items-center text-center">
-            <div class="about">
-                <h4>ABOUT US</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure temporibus reiciendis itaque corrupti delectus officia maiores quod, est tempora recusandae sed qui enim laboriosam incidunt.</p>
-                <div class="rond">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-google-plus-g"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-linkedin-in"></i>
+        <div class="row d-flex justify-content-center">
+            <div class="col-3 about mt-5">
+                <h4 class="mx-3">ABOUT US</h4>
+                <p class="mx-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure temporibus reiciendis itaque corrupti delectus officia maiores quod, est tempora recusandae sed qui enim laboriosam incidunt.</p>
+                <div class="">
+                    <i class="fab fa-facebook-f mx-3 my-3"></i>
+                    <i class="fab fa-google-plus-g mx-3"></i>
+                    <i class="fab fa-pinterest-p mx-3"></i>
+                    <i class="fab fa-linkedin-in mx-3"></i>
                 </div>
             </div>
-            <div class="insta">
+            <div class="col-3 insta mt-5">
                 <h4>INSTAGRAM</h4>
                 <img src="./public/images/menu_image_3.jpg" alt="">
                 <img src="./public/images/menu_image_4.jpg" alt="">
@@ -515,9 +521,9 @@
                 <img src="./public/images/menu_image_3.jpg" alt="">
                 <img src="./public/images/menu_image_4.jpg" alt="">
             </div>
-            <div class="tags">
+            <div class="col-3 tags mt-5">
                 <h4>POPULAR TAGS</h4>
-                <button class="btn bg-bouton rounded-pill text-white">Restaurant</button>
+                <button class="btn bg-bouton rounded-pill text-white my-3">Restaurant</button>
                 <button class="btn bg-bouton rounded-pill text-white">Responsive Design</button>
                 <button class="btn bg-bouton rounded-pill text-white">Blog Section</button>
                 <button class="btn bg-bouton rounded-pill text-white">Graphic</button>
@@ -525,6 +531,7 @@
                 <button class="btn bg-bouton rounded-pill text-white">Cuisine</button>
                 <button class="btn bg-bouton rounded-pill text-white">Seo</button>
             </div>
+            <div class="end bg-bouton mt-10"></div>
         </div>
     </footer>
     <!-- script jquery -->
