@@ -20348,11 +20348,6 @@ header .carousel .carousel-indicators li {
   color: #000;
 }
 
-.section3 .blog {
-  display: flex;
-  flex-direction: column;
-}
-
 .section3 .blog .date {
   position: relative;
   width: 200px;
@@ -20377,4 +20372,78 @@ header .carousel .carousel-indicators li {
 .section3 .blog .textblog {
   z-index: 1;
   padding-top: 100px;
+}
+
+.section4 .client {
+  background-image: url("../images/testimonials_background.jpg");
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section4 .client h2 {
+  font-family: Courgette-Regular;
+  color: #B32A3A;
+  font-size: 50px;
+}
+
+.section4 .client span {
+  font-family: Courgette-Regular;
+  color: #ffffff;
+}
+
+.section4 .row .temoincont {
+  height: 180px;
+  border-radius: 15%;
+}
+
+.section4 .row .temoincont .cercle img {
+  border: 5px solid white;
+  height: 200px;
+}
+
+.section4 .contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section4 .contact h2 {
+  font-family: Courgette-Regular;
+  color: #B32A3A;
+  font-size: 50px;
+}
+
+.section4 .contact span {
+  font-family: Courgette-Regular;
+  color: #000;
+}
+
+.section4 .contact .icones {
+  background-color: #B32A3A;
+}
+
+.section5 .contact h2 {
+  font-family: Courgette-Regular;
+  color: #B32A3A;
+  font-size: 50px;
+}
+
+.section5 .contact span {
+  font-family: Courgette-Regular;
+  color: #000;
+}
+
+.section5 .contact .icones {
+  background-color: #B32A3A;
+  border: 1px solid none;
+  border-radius: 20px;
+}
+
+.section5 .contact .icones i {
+  font-size: 50px;
+  padding-top: 15px;
+  color: white;
+}
+
+.section5 .contact .icones p {
+  color: white;
 }
