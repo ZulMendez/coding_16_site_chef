@@ -2,29 +2,33 @@ header
     position: relative
     #headertitre
         position: absolute 
-        top: 10%
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
         z-index: 1100
+        @include media-breakpoint-only(md)
+            top: 50%
         h4
             font-size: 100px
             color: white
             font-family: Courgette-Regular
-            @include media-breakpoint-down(lg)
-                font-size: 40px
-                margin-top: 70px
+            @include media-breakpoint-down(md)
+                font-size: 25px
+                margin-top: 30px
             .petit
                 font-size: 80px
                 @include media-breakpoint-down(lg)
-                    font-size: 30px
+                    font-size: 20px
         .boutton
             font-size: 30px
             @include media-breakpoint-down(lg)
-                font-size: 5px
+                display: none
             .btn 
                 border: 10px solid none
                 border-radius: 30px
                 padding: 10px 30px
                 @include media-breakpoint-down(lg)
-                    font-size: 10px
+                    font-size: 5px
                     margin: 0 5px
     .navbar
         position: absolute
@@ -32,14 +36,21 @@ header
         .liste
             border-top: 2px solid white
             border-bottom: 2px solid white
+            @include media-breakpoint-down(sm)
+                background-color: #C12D3F
             a
                 text-decoration: none
                 font-size: 15px
+            @include media-breakpoint-down(lg)
+                font-size: 10px
             &:hover 
                 background-color: #C12D3F
-        // .listenav
-        //     @include media-breakpoint-only(lg)
-        //         display: none
+        .logo
+            @include media-breakpoint-down(lg)
+                display: none
+        .listenav
+            @include media-breakpoint-down(sm)
+                display: none
     .carousel
             .d-block
                 filter: brightness(10%)

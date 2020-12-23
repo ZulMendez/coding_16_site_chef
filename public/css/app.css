@@ -20171,8 +20171,16 @@ header {
 
 header #headertitre {
   position: absolute;
-  top: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1100;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header #headertitre {
+    top: 50%;
+  }
 }
 
 header #headertitre h4 {
@@ -20181,10 +20189,10 @@ header #headertitre h4 {
   font-family: Courgette-Regular;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   header #headertitre h4 {
-    font-size: 40px;
-    margin-top: 70px;
+    font-size: 25px;
+    margin-top: 30px;
   }
 }
 
@@ -20194,7 +20202,7 @@ header #headertitre h4 .petit {
 
 @media (max-width: 1199.98px) {
   header #headertitre h4 .petit {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -20204,7 +20212,7 @@ header #headertitre .boutton {
 
 @media (max-width: 1199.98px) {
   header #headertitre .boutton {
-    font-size: 5px;
+    display: none;
   }
 }
 
@@ -20216,7 +20224,7 @@ header #headertitre .boutton .btn {
 
 @media (max-width: 1199.98px) {
   header #headertitre .boutton .btn {
-    font-size: 10px;
+    font-size: 5px;
     margin: 0 5px;
   }
 }
@@ -20231,13 +20239,37 @@ header .navbar .liste {
   border-bottom: 2px solid white;
 }
 
+@media (max-width: 767.98px) {
+  header .navbar .liste {
+    background-color: #C12D3F;
+  }
+}
+
 header .navbar .liste a {
   text-decoration: none;
   font-size: 15px;
 }
 
+@media (max-width: 1199.98px) {
+  header .navbar .liste {
+    font-size: 10px;
+  }
+}
+
 header .navbar .liste:hover {
   background-color: #C12D3F;
+}
+
+@media (max-width: 1199.98px) {
+  header .navbar .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header .navbar .listenav {
+    display: none;
+  }
 }
 
 header .carousel .d-block {
@@ -20279,6 +20311,7 @@ header .carousel .carousel-indicators li {
 
 .section1 .story .storytext {
   width: 50%;
+  font-family: Ubuntu-Regular;
 }
 
 @media (max-width: 1199.98px) {
@@ -20300,9 +20333,16 @@ header .carousel .carousel-indicators li {
   border-right: 2px solid #bbbaba;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section1 .menu .icones a {
-    font-size: 20px;
+    font-size: 30px;
+    border: 2px solid #bbbaba;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section1 .menu .icones a {
+    border: 2px solid #bbbaba;
   }
 }
 
@@ -20321,16 +20361,17 @@ header .carousel .carousel-indicators li {
   font-size: 30px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section1 .menu .icones span {
     font-size: 15px;
     text-align: center;
   }
 }
 
-@media (max-width: 1199.98px) {
-  .section1 .menutext .text-menu {
-    font-size: 10px;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section1 .menutext {
+    margin-left: 80px;
+    margin-bottom: 100px;
   }
 }
 
@@ -20343,7 +20384,7 @@ header .carousel .carousel-indicators li {
   height: 150px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section1 .menutext .cercle {
     font-size: 10px;
     margin: auto;
@@ -20358,9 +20399,15 @@ header .carousel .carousel-indicators li {
   color: #B32A3A;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section1 .menutext .prix {
-    font-size: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section1 .menutext .prix {
+    font-size: 20px;
   }
 }
 
@@ -20392,6 +20439,13 @@ header .carousel .carousel-indicators li {
   justify-content: center;
 }
 
+@media (max-width: 767.98px) {
+  .section2 .chefs {
+    width: 380px;
+    display: block;
+  }
+}
+
 .section2 .chefs p {
   border-top: 1px solid white;
   color: white;
@@ -20399,9 +20453,10 @@ header .carousel .carousel-indicators li {
   font-family: Ubuntu-Regular;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section2 .chefs p {
-    font-size: 10px;
+    font-size: 15px;
+    opacity: 0.7;
   }
 }
 
@@ -20409,9 +20464,15 @@ header .carousel .carousel-indicators li {
   width: 200px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section2 .chefs img {
-    width: 80px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section2 .chefs img {
+    width: 150px;
   }
 }
 
@@ -20427,7 +20488,7 @@ header .carousel .carousel-indicators li {
   border-radius: 5%;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .section3 form {
     height: 80vh;
   }
@@ -20435,7 +20496,9 @@ header .carousel .carousel-indicators li {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section3 form {
-    height: 35vh;
+    width: 100%;
+    height: 100%;
+    height: 30vh;
   }
 }
 
@@ -20486,7 +20549,7 @@ header .carousel .carousel-indicators li {
   width: auto;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .section3 .blog img {
     height: 150px;
   }
@@ -20495,13 +20558,24 @@ header .carousel .carousel-indicators li {
 .section3 .blog span {
   font-weight: bold;
   font-size: 22px;
+  font-family: Ubuntu-Regular;
+}
+
+.section3 .blog .textblog {
+  font-family: Ubuntu-Regular;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section3 .blog .textblog {
+    font-size: 20px;
+  }
 }
 
 .section3 .blog button {
   font-size: 16px;
   top: 50%;
   left: 50%;
-  transform: translate(0%, -50%);
+  transform: translate(15%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 16px;
@@ -20510,9 +20584,18 @@ header .carousel .carousel-indicators li {
   text-align: center;
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .section3 .blog button {
     margin: auto;
+    font-size: 20px;
+    right: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .section3 .blog button {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
 }
 
@@ -20547,6 +20630,12 @@ header .carousel .carousel-indicators li {
   color: #ffffff;
 }
 
+@media (max-width: 1199.98px) {
+  .section4 .row {
+    margin-top: 10px;
+  }
+}
+
 .section4 .row .temoincont {
   border-radius: 15%;
   border: 5px solid white;
@@ -20556,11 +20645,13 @@ header .carousel .carousel-indicators li {
 @media (max-width: 1199.98px) {
   .section4 .row .temoincont {
     height: 100px;
+    margin-top: 15px;
   }
 }
 
 .section4 .row .text-client {
   font-family: Ubuntu-Regular;
+  opacity: 0.7;
 }
 
 @media (max-width: 1199.98px) {

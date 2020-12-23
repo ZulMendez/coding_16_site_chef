@@ -15,14 +15,18 @@
             font-family: Courgette-Regular
             color: #ffffff
     .row
+        @include media-breakpoint-down(lg)
+            margin-top: 10px
         .temoincont
             border-radius: 15%
             border: 5px solid white
             height: 200px
             @include media-breakpoint-down(lg)
                 height: 100px
+                margin-top: 15px
         .text-client
             font-family: Ubuntu-Regular
+            opacity: 0.7
             @include media-breakpoint-down(lg)
                 font-size: 17px
                 margin: auto
