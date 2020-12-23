@@ -20165,10 +20165,70 @@ body {
   margin: 0;
 }
 
+header {
+  position: relative;
+}
+
+header #headertitre {
+  position: absolute;
+  top: 10%;
+  z-index: 1100;
+}
+
+header #headertitre h4 {
+  font-size: 100px;
+  color: white;
+  font-family: Courgette-Regular;
+}
+
+@media (max-width: 1199.98px) {
+  header #headertitre h4 {
+    font-size: 40px;
+    margin-top: 70px;
+  }
+}
+
+header #headertitre h4 .petit {
+  font-size: 80px;
+}
+
+@media (max-width: 1199.98px) {
+  header #headertitre h4 .petit {
+    font-size: 30px;
+  }
+}
+
+header #headertitre .boutton {
+  font-size: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  header #headertitre .boutton {
+    font-size: 5px;
+  }
+}
+
+header #headertitre .boutton .btn {
+  border: 10px solid none;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+@media (max-width: 1199.98px) {
+  header #headertitre .boutton .btn {
+    font-size: 10px;
+    margin: 0 5px;
+  }
+}
+
+header .navbar {
+  position: absolute;
+  z-index: 1200;
+}
+
 header .navbar .liste {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-  padding: 15px 0 3px 0;
 }
 
 header .navbar .liste a {
@@ -20176,29 +20236,8 @@ header .navbar .liste a {
   font-size: 15px;
 }
 
-header .navbar .liste a:hover {
+header .navbar .liste:hover {
   background-color: #C12D3F;
-  padding: 15px 15px 15px 15px;
-}
-
-header .navbar .titre h4 {
-  font-size: 120px;
-  color: white;
-  font-family: Courgette-Regular;
-}
-
-header .navbar .titre .petit {
-  font-size: 90px;
-}
-
-header .navbar .titre .boutton {
-  font-size: 30px;
-}
-
-header .navbar .titre .boutton .btn {
-  border: 10px solid none;
-  border-radius: 30px;
-  padding: 10px 30px;
 }
 
 header .carousel .d-block {
@@ -20227,13 +20266,25 @@ header .carousel .carousel-indicators li {
   font-size: 50px;
 }
 
+@media (max-width: 1199.98px) {
+  .section1 .story h2 {
+    font-size: 30px;
+  }
+}
+
 .section1 .story span {
   font-family: Courgette-Regular;
   color: #000;
 }
 
 .section1 .story .storytext {
-  width: 400px;
+  width: 50%;
+}
+
+@media (max-width: 1199.98px) {
+  .section1 .story .storytext {
+    width: 80%;
+  }
 }
 
 .section1 .menu .icones {
@@ -20247,6 +20298,12 @@ header .carousel .carousel-indicators li {
   border: none;
   border-bottom: 2px solid #bbbaba;
   border-right: 2px solid #bbbaba;
+}
+
+@media (max-width: 1199.98px) {
+  .section1 .menu .icones a {
+    font-size: 20px;
+  }
 }
 
 .section1 .menu .icones i {
@@ -20264,12 +20321,34 @@ header .carousel .carousel-indicators li {
   font-size: 30px;
 }
 
+@media (max-width: 1199.98px) {
+  .section1 .menu .icones span {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section1 .menutext .text-menu {
+    font-size: 10px;
+  }
+}
+
 .section1 .menutext .cercle {
   border: solid 0.08em #e0e1e4;
   border-radius: 50%;
   background-color: white;
   font-size: 80px;
   margin: 5px;
+  height: 150px;
+}
+
+@media (max-width: 1199.98px) {
+  .section1 .menutext .cercle {
+    font-size: 10px;
+    margin: auto;
+    height: 60px;
+  }
 }
 
 .section1 .menutext .prix {
@@ -20277,6 +20356,12 @@ header .carousel .carousel-indicators li {
   padding: 5px;
   opacity: 0.8;
   color: #B32A3A;
+}
+
+@media (max-width: 1199.98px) {
+  .section1 .menutext .prix {
+    font-size: 10px;
+  }
 }
 
 .section2 {
@@ -20292,6 +20377,12 @@ header .carousel .carousel-indicators li {
   font-size: 50px;
 }
 
+@media (max-width: 1199.98px) {
+  .section2 h2 {
+    font-size: 30px;
+  }
+}
+
 .section2 span {
   color: white;
 }
@@ -20305,6 +20396,23 @@ header .carousel .carousel-indicators li {
   border-top: 1px solid white;
   color: white;
   text-transform: uppercase;
+  font-family: Ubuntu-Regular;
+}
+
+@media (max-width: 1199.98px) {
+  .section2 .chefs p {
+    font-size: 10px;
+  }
+}
+
+.section2 .chefs img {
+  width: 200px;
+}
+
+@media (max-width: 1199.98px) {
+  .section2 .chefs img {
+    width: 80px;
+  }
 }
 
 .section3 {
@@ -20317,6 +20425,18 @@ header .carousel .carousel-indicators li {
   height: 50vh;
   margin: 0 auto;
   border-radius: 5%;
+}
+
+@media (max-width: 1199.98px) {
+  .section3 form {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section3 form {
+    height: 35vh;
+  }
 }
 
 .section3 form input {
@@ -20343,6 +20463,12 @@ header .carousel .carousel-indicators li {
   font-size: 50px;
 }
 
+@media (max-width: 1199.98px) {
+  .section3 .story h2 {
+    font-size: 30px;
+  }
+}
+
 .section3 .story span {
   font-family: Courgette-Regular;
   color: #000;
@@ -20358,6 +20484,12 @@ header .carousel .carousel-indicators li {
   border: solid 0.3em lightgrey;
   height: auto;
   width: auto;
+}
+
+@media (max-width: 991.98px) {
+  .section3 .blog img {
+    height: 150px;
+  }
 }
 
 .section3 .blog span {
@@ -20378,13 +20510,19 @@ header .carousel .carousel-indicators li {
   text-align: center;
 }
 
+@media (max-width: 991.98px) {
+  .section3 .blog button {
+    margin: auto;
+  }
+}
+
 .section3 .blog .date {
   margin-bottom: 50px;
   border-radius: 30px;
   margin: 30px;
 }
 
-.section4 .client {
+.section4.client {
   background-image: url("../images/testimonials_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -20392,31 +20530,56 @@ header .carousel .carousel-indicators li {
   padding-bottom: 20px;
 }
 
-.section4 .client h2 {
+.section4.client h2 {
   font-family: Courgette-Regular;
   color: #B32A3A;
   font-size: 50px;
 }
 
-.section4 .client span {
+@media (max-width: 1199.98px) {
+  .section4.client h2 {
+    font-size: 30px;
+  }
+}
+
+.section4.client span {
   font-family: Courgette-Regular;
   color: #ffffff;
 }
 
 .section4 .row .temoincont {
-  height: 180px;
   border-radius: 15%;
-}
-
-.section4 .row .temoincont .cercle img {
   border: 5px solid white;
   height: 200px;
+}
+
+@media (max-width: 1199.98px) {
+  .section4 .row .temoincont {
+    height: 100px;
+  }
+}
+
+.section4 .row .text-client {
+  font-family: Ubuntu-Regular;
+}
+
+@media (max-width: 1199.98px) {
+  .section4 .row .text-client {
+    font-size: 17px;
+    margin: auto;
+  }
 }
 
 .section5 .contact h2 {
   font-family: Courgette-Regular;
   color: #B32A3A;
   font-size: 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .section5 .contact h2 {
+    font-size: 30px;
+  }
 }
 
 .section5 .contact span {
@@ -20454,6 +20617,12 @@ footer .about {
   font-family: Ubuntu-Regular;
 }
 
+@media (max-width: 1199.98px) {
+  footer .about {
+    text-align: center;
+  }
+}
+
 footer .about i {
   font-size: 30px;
 }
@@ -20462,13 +20631,25 @@ footer .insta {
   font-family: Ubuntu-Regular;
 }
 
+@media (max-width: 1199.98px) {
+  footer .insta {
+    text-align: center;
+  }
+}
+
 footer .insta img {
   width: 120px;
   height: 100px;
 }
 
-footer .tag {
+footer .tags {
   font-family: Ubuntu-Regular;
+}
+
+@media (max-width: 1199.98px) {
+  footer .tags {
+    text-align: center;
+  }
 }
 
 footer .end {

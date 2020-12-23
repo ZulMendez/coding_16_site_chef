@@ -1,5 +1,5 @@
 .section4
-    .client
+    &.client
         background-image: url("../images/testimonials_background.jpg")
         background-size: cover
         background-repeat: no-repeat
@@ -9,14 +9,20 @@
             font-family: Courgette-Regular
             color: #B32A3A
             font-size: 50px
+            @include media-breakpoint-down(lg)
+                font-size: 30px
         span
             font-family: Courgette-Regular
             color: #ffffff
     .row
         .temoincont
-            height: 180px
             border-radius: 15%
-            .cercle
-                img
-                    border: 5px solid white
-                    height: 200px
+            border: 5px solid white
+            height: 200px
+            @include media-breakpoint-down(lg)
+                height: 100px
+        .text-client
+            font-family: Ubuntu-Regular
+            @include media-breakpoint-down(lg)
+                font-size: 17px
+                margin: auto

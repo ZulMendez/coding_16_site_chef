@@ -6,6 +6,10 @@
         height: 50vh
         margin: 0 auto
         border-radius: 5%
+        @include media-breakpoint-down(lg)
+            height: 80vh
+        @include media-breakpoint-only(md)
+            height: 35vh
         input
             border-radius: 15px
         select
@@ -20,6 +24,8 @@
             font-family: Courgette-Regular
             color: #B32A3A
             font-size: 50px
+            @include media-breakpoint-down(lg)
+                font-size: 30px
         span
             font-family: Courgette-Regular
             color: #000
@@ -31,6 +37,8 @@
             border: solid 0.3em lightgrey
             height: auto
             width: auto
+            @include media-breakpoint-down(md)
+                height: 150px
         span
             font-weight: bold
             font-size: 22px
@@ -45,6 +53,8 @@
             margin: 0px 0px 0 50px
             border-radius: 8px
             text-align: center
+            @include media-breakpoint-down(md)
+                margin: auto
         .date
             margin-bottom: 50px
             border-radius: 30px

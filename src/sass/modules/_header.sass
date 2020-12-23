@@ -1,28 +1,45 @@
 header
+    position: relative
+    #headertitre
+        position: absolute 
+        top: 10%
+        z-index: 1100
+        h4
+            font-size: 100px
+            color: white
+            font-family: Courgette-Regular
+            @include media-breakpoint-down(lg)
+                font-size: 40px
+                margin-top: 70px
+            .petit
+                font-size: 80px
+                @include media-breakpoint-down(lg)
+                    font-size: 30px
+        .boutton
+            font-size: 30px
+            @include media-breakpoint-down(lg)
+                font-size: 5px
+            .btn 
+                border: 10px solid none
+                border-radius: 30px
+                padding: 10px 30px
+                @include media-breakpoint-down(lg)
+                    font-size: 10px
+                    margin: 0 5px
     .navbar
+        position: absolute
+        z-index: 1200
         .liste
             border-top: 2px solid white
             border-bottom: 2px solid white
-            padding: 15px 0 3px 0
             a
                 text-decoration: none
                 font-size: 15px
-            a:hover 
+            &:hover 
                 background-color: #C12D3F
-                padding: 15px 15px 15px 15px
-        .titre
-            h4
-                font-size: 120px
-                color: white
-                font-family: Courgette-Regular
-            .petit
-                font-size: 90px
-            .boutton
-                font-size: 30px
-                .btn 
-                    border: 10px solid none
-                    border-radius: 30px
-                    padding: 10px 30px
+        // .listenav
+        //     @include media-breakpoint-only(lg)
+        //         display: none
     .carousel
             .d-block
                 filter: brightness(10%)
@@ -30,5 +47,5 @@ header
             .carousel-indicators
                         li
                             border-radius: 50%
-                            width: 12px;
-                            height: 12px;
+                            width: 12px
+                            height: 12px

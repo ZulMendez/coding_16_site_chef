@@ -11,54 +11,66 @@
 <!-- début contenu -->
 <body>
     <header>
-        <!-- nav et carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide position-relative" data-ride="carousel">
-            <nav class="navbar position-absolute w-100 d-flex justify-content-center" style="z-index: 1;">
-                <div class="liste">
-                    <ul class="d-flex list-unstyled">
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">HOME</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">ABOUT US</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">MENU LIST</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">TEAM</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img class="px-5" src="./public/images/logo.png" alt="logo">
-                </div>
-                <div class="liste">
-                    <ul class="d-flex list-unstyled">
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">RESERVATION</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">BLOG</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">TESTIMONIALS</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link-btn text-white" href="">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="titre w-100 text-center">
-                    <h4><span class="petit">Whatever your</span> <span>OCCASION</span>,<br><span
-                            class="text-texte">TASTE </span>makes <span class="petit">it one <br> to</span> remember!
-                    </h4>
-                    <div class="boutton">
-                        <button class="btn bg-white">PURCHASE THEME</button>
-                        <button class="btn bg-bouton text-white">LEARN MORE</button>
+        <!-- NAVBAR ET CAROUSEL -->
+        <nav class="navbar navbar navbar-expand-lg navbar-dark bg-none w-100 d-flex justify-content-center">
+        <!-- NAVBAR RESPONSIVE -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container">
+                    <div class="row w-100 mx-auto align-items-center">
+                        <div class="col-lg-5 col-md-3 col-sm-2">
+                            <ul class="navbar-nav d-flex align-items-center m-0 p-0 list-unstyled">
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">HOME</a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">ABOUT US</a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">MENU LIST</a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">TEAM</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-1 col-md-4 col-sm-6 text-center">
+                            <img class="img-fluid" src="./public/images/logo.png" alt="logo">
+                        </div>
+                        <div class="listenav col-lg-5 col-md-3 col-sm-3">
+                            <ul class="navbar-nav d-flex align-items-center m-0 p-0 list-unstyled">
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">RESERVATION</a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">BLOG</a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">TESTIMONIALS</a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a class="nav-link liste text-white text-center" href="">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <!-- TITRE -->
+        <div id="headertitre" class="titre w-100 text-center">
+                <h4>
+                    <span class="petit">Whatever your</span> <span>OCCASION</span>,<br>
+                    <span class="text-texte">TASTE </span>makes <span class="petit">it one <br> to</span> remember!
+                </h4>
+                <div class="boutton">
+                    <button class="btn bg-white">PURCHASE THEME</button>
+                    <button class="btn bg-bouton text-white">LEARN MORE</button>
+                </div>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide position-relative" data-ride="carousel">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -106,8 +118,8 @@
         <img class="position-absolute" style="bottom:0%; right:0%" src="./public/images/box-bottom_right.png" alt="br">
         <div class="story text-center">
             <h2 class="mt-5">OUR <span>Story</span></h2>
-            <img src="./public/images/decoration_line.png" alt="deco">
-            <p class="storytext text-center mx-22 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            <img class="img-fluid" src="./public/images/decoration_line.png" alt="deco">
+            <p class="storytext text-center mx-auto my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
                 sapiente expedita
                 culpa! Vero blanditiis
                 eius debitis! Labore reiciendis dolorum praesentium et enim temporibus. Ipsam velit voluptate totam.
@@ -116,12 +128,12 @@
         </div>
         <div class="story text-center">
             <h2>OUR <span>Menu List</span></h2>
-            <img src="./public/images/decoration_line.png" alt="deco">
+            <img class="img-fluid" src="./public/images/decoration_line.png" alt="deco">
         </div>
-        <!-- liste bouton -->
+        <!-- LISTE BOUTON -->
         <div class="menu container py-5 w-100">
             <div class="row">
-                <div class="icones col-2 p-0">
+                <div class="icones col-lg-2 col-md-5 col-sm-5 p-0">
                     <div class="list-group pb-10" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" role="tab" data-toggle="list"
                             aria-controls="breakfast" id="breakfast" href="#n1">
@@ -141,12 +153,12 @@
                         </a>
                     </div>
                 </div>
-                <!-- liste menu -->
-                <div class="menutext col-10 p-0">
+                <!-- LISTE MENU -->
+                <div class="menutext col-lg-10 col-md-2 col-sm-2 p-0">
                     <div class="tab-content">
                         <div class="tab-pane fade active show" role="tabpanel" aria-labelledby="breakfast" id="n1">
                             <div class="container row d-inline-flex">
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -159,7 +171,7 @@
                                         <span>$25</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -174,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="container row d-inline-flex">
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -187,7 +199,7 @@
                                         <span>$15</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -198,39 +210,13 @@
                                     </div>
                                     <div class="prix px-3">
                                         <span>$25</span>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="coffee px-3">
-                                        <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
-                                            alt="coffee">
-                                    </div>
-                                    <div class="text-menu px-3">
-                                        <h5>Deer Steak with Potatoes</h5>
-                                        <p>Welcome to risotto restaurant <br> website. Here we try to share our.</p>
-                                    </div>
-                                    <div class="prix px-3">
-                                        <span>$20</span>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="coffee px-3">
-                                        <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
-                                            alt="coffee">
-                                    </div>
-                                    <div class="text-menu px-3">
-                                        <h5>Deer Steak with Potatoes</h5>
-                                        <p>Welcome to risotto restaurant <br> website. Here we try to share our.</p>
-                                    </div>
-                                    <div class="prix px-3">
-                                        <span>$10</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" role="tabpanel" aria-labelledby="lunch" id="n2">
                             <div class="container row d-inline-flex">
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -243,7 +229,7 @@
                                         <span>$25</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -260,7 +246,7 @@
                         </div>
                         <div class="tab-pane fade" role="tabpanel" aria-labelledby="snacks" id="n3">
                             <div class="container row d-inline-flex">
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -273,7 +259,7 @@
                                         <span>$15</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -286,7 +272,7 @@
                                         <span>$25</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -299,7 +285,7 @@
                                         <span>$15</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -316,7 +302,7 @@
                         </div>
                         <div class="tab-pane fade" role="tabpanel" aria-labelledby="dinner" id="n4">
                             <div class="container row d-inline-flex">
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -329,7 +315,7 @@
                                         <span>$25</span>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-3 d-flex align-items-center">
                                     <div class="coffee px-3">
                                         <img class="cercle rounded-circle" src="./public/images/menu_image_1.jpg"
                                             alt="coffee">
@@ -352,22 +338,22 @@
     <!-- section 2 - CHEFS -->
     <section class="section2">
         <h2>MEET <span>Our Chef</span></h2>
-        <img src="./public/images/decoration_line.png" alt="deco">
+        <img class="img-fluid" src="./public/images/decoration_line.png" alt="deco">
         <div class="chefs pt-5 pb-3">
-            <div class="mx-5">
-                <img src="./public/images/chef1.png" alt="chef1">
+            <div class="mx-3">
+                <img class="img-fluid" src="./public/images/chef1.png" alt="chef1">
                 <p class="pr-2">lorem ipsum</p>
             </div>
-            <div class="mx-5">
-                <img src="./public/images/chef2.png" alt="chef2">
+            <div class="mx-3">
+                <img class="img-fluid" src="./public/images/chef2.png" alt="chef2">
                 <p>lorem ipsum</p>
             </div>
-            <div class="mx-5">
-                <img src="./public/images/chef3.png" alt="chef3">
+            <div class="mx-3">
+                <img class="img-fluid" src="./public/images/chef3.png" alt="chef3">
                 <p>lorem ipsum</p>
             </div>
-            <div class="mx-5">
-                <img src="./public/images/chef4.png" alt="chef4">
+            <div class="mx-3">
+                <img class="img-fluid" src="./public/images/chef4.png" alt="chef4">
                 <p>lorem ipsum</p>
             </div>
         </div>
@@ -383,35 +369,35 @@
             alt="br">
         <div class="story text-center">
             <h2 class="mt-5">BOOK <span>Your Table</span></h2>
-            <img src="./public/images/decoration_line.png" alt="deco">
+            <img class="img-fluid" src="./public/images/decoration_line.png" alt="deco">
         </div>
         <!-- formulaire -->
         <form class="container">
             <h4 class="text-white text-center pt-5 pb-3">For any question please call us at: <span>+91-1234567890</span>
             </h4>
-            <div class="book row">
-                <div class="col-6 py-3">
+            <div class="book row mx-auto">
+                <div class="col-lg-6 col-md-3 col-sm-6 py-1">
                     <input type="text" class="form-control" id="email" placeholder="Enter Full Name" name="email">
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-4 py-1">
                     <input type="password" class="form-control" placeholder="Enter Id" name="pswd">
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-4 py-1">
                     <input type="text" class="form-control" id="email" placeholder="Phone Number" name="email">
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-4 py-1">
                     <select id="inputState" class="form-control"></select>
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-4 py-1">
                     <input type="text" class="form-control" id="email" placeholder="Date" name="email">
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-6 py-1">
                     <input type="password" class="form-control" placeholder="Time" name="pswd">
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-6 py-1">
                     <select id="inputState" class="form-control"></select>
                 </div>
-                <div class="col-6 py-3">
+                <div class="col-lg-6 col-md-3 col-sm-4 py-1">
                     <select id="inputState" class="form-control"></select>
                 </div>
                     <button class="btn bg-bouton text-white my-3 mx-auto">BOOK NOW</button>
@@ -420,58 +406,62 @@
         <!-- BLOG -->
         <div class="story text-center">
             <h2 class="mt-5">OUR <span>Blog</span></h2>
-            <img src="./public/images/decoration_line.png" alt="deco">
+            <img class="img-fluid" src="./public/images/decoration_line.png" alt="deco">
         </div>
-        <div class="blog row container">
-            <div class="blog row container">
-                <div class="col-6">
-                    <img src="./public/images/blog_img1.jpg" alt="">
-                    <div class="pl-5">
+        <div class="blog container">
+            <div class="blog row">
+                <div class="col-lg-6 col-md-5 col-sm-1 mx-auto">
+                    <img class="img-fluid" src="./public/images/blog_img1.jpg" alt="">
+                    <div class="">
                         <button class="btn btn-bouton" type="button"><span>12</span>April
                             2017/ <span>20</span>Comment/ <span>35</span>Likes</button>
                     </div>
                     <h6>Lorem Ipsum</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
                 </div>
-                <div class="col-6 container">
-                    <img src="./public/images/blog_img2.jpg" alt="">
-                    <div class="pl-5">
+                <div class="col-lg-6 col-md-5 col-sm-1">
+                    <img class="img-fluid" src="./public/images/blog_img2.jpg" alt="">
+                    <div class="">
                         <button class="btn btn-bouton" type="button"><span>12</span>April
-                            2017/<span>20</span>Comment/<span>35</span>Likes</button>
+                            2017/ <span>20</span>Comment/<span>35</span>Likes</button>
                     </div>
                     <h6>Lorem Ipsum</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
                 </div>
                 <button type="button" class="date btn-bouton btn-lg d-flex mx-auto mb-5">Know More</button>
             </div>
+        </div>
     </section>
     <!-- section 4 - CLIENT-->
-    <section class="section4">
-        <div class="client text-center">
+    <section class="section4 client container-fluid">
+        <div class="container text-center">
             <h2 class="mt-5">Client <span>Testimonials</span></h2>
-            <img class="deco" src="./public/images/decoration_line.png" alt="deco">
-            <div class="container-fluid d-flex my-5">
-                <div class="row py-5">
-                    <div class="col-6 d-flex ml-40 temoincont">
-                        <div class="cercle mr-5">
-                            <img class="rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
-                        </div>
-                        <div class="col-6 border border-white rounded">
-                            <h4 class="text-white">Lorem, ipsum.</h4>
-                            <span class="text-bouton">Manager</span>
-                            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+            <img class="deco img-fluid" src="./public/images/decoration_line.png" alt="deco">
+            <div class="container my-5">
+                <!--TEMOINS -->
+                <div class="row mx-auto">
+                    <div class="col-lg-6 col-md-6 sm-6">
+                        <div class="row mx-auto"><!-- element de gauche -->
+                            <div class="col-lg-6 col-md-6 sm-6 cercle">
+                                <img class="temoincont rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
+                            </div>
+                            <div class="text-client col-lg-6 col-md-6 sm-6 border border-white rounded">
+                                <h4 class="text-white">Lorem, ipsum.</h4>
+                                <span class="text-bouton">Manager</span>
+                                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row py-5">
-                    <div class="col-6 d-flex mr-40 flex-row-reverse temoincont">
-                        <div class="cercle ml-5">
-                            <img class="rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
-                        </div>
-                        <div class="col-6 border border-white rounded">
-                            <h4 class="text-white">Lorem, ipsum.</h4>
-                            <span class="text-bouton">Manager</span>
-                            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="row mx-auto"> <!-- element de droite -->
+                            <div class="col-lg-6 col-md-6 sm-6 order-1 order-md-2 cercle">
+                                <img class="temoincont rounded-circle" src="./public/images/testimonial1.jpg" alt="temoin">
+                            </div>
+                            <div class="text-client col-lg-6 col-md-6 sm-6 order-2 order-md-1 border border-white rounded">
+                                <h4 class="text-white">Lorem, ipsum.</h4>
+                                <span class="text-bouton">Manager</span>
+                                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eaque maiores ipsum quisquam a! Doloribus.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -482,8 +472,8 @@
     <!-- section 5 - CONTACT-->
     <section class="section5 container text-center py-5">
         <div class="contact py-5">
-            <h2 class="mt-5">OUR <span>Contact</span></h2>
-            <img class="pb-5" src="./public/images/decoration_line.png" alt="deco">
+            <h2 class="mt-2">OUR <span>Contact</span></h2>
+            <img class="pb-5 img-fluid" src="./public/images/decoration_line.png" alt="deco">
             <div class="icones">
                 <i class="fas fa-map-marker-alt"></i>
                 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolore.</p>
@@ -500,7 +490,7 @@
     <!-- footer -->
     <footer class="container-fluid text-light">
         <div class="row d-flex justify-content-center">
-            <div class="col-3 about mt-5">
+            <div class="col-lg-3 about mt-5">
                 <h4 class="mx-3">ABOUT US</h4>
                 <p class="mx-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure temporibus reiciendis itaque corrupti delectus officia maiores quod, est tempora recusandae sed qui enim laboriosam incidunt.</p>
                 <div class="">
@@ -510,7 +500,7 @@
                     <i class="fab fa-linkedin-in mx-3"></i>
                 </div>
             </div>
-            <div class="col-3 insta mt-5">
+            <div class="col-lg-3 insta mt-5">
                 <h4>INSTAGRAM</h4>
                 <img src="./public/images/menu_image_3.jpg" alt="">
                 <img src="./public/images/menu_image_4.jpg" alt="">
@@ -521,7 +511,7 @@
                 <img src="./public/images/menu_image_3.jpg" alt="">
                 <img src="./public/images/menu_image_4.jpg" alt="">
             </div>
-            <div class="col-3 tags mt-5">
+            <div class="col-lg-3 tags mt-5">
                 <h4>POPULAR TAGS</h4>
                 <button class="btn bg-bouton rounded-pill text-white my-3">Restaurant</button>
                 <button class="btn bg-bouton rounded-pill text-white">Responsive Design</button>

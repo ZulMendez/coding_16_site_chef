@@ -7,11 +7,15 @@
             font-family: Courgette-Regular
             color: #B32A3A
             font-size: 50px
+            @include media-breakpoint-down(lg)
+                font-size: 30px
         span
             font-family: Courgette-Regular
             color: #000
         .storytext
-            width: 400px
+            width: 50%
+            @include media-breakpoint-down(lg) 
+                width: 80%
     .menu
         .icones
             text-align: center 
@@ -22,6 +26,8 @@
                 border: none
                 border-bottom: 2px solid #bbbaba
                 border-right: 2px solid #bbbaba
+                @include media-breakpoint-down(lg)
+                    font-size: 20px
             i
                 color: grey
                 opacity: 0.6
@@ -31,15 +37,28 @@
             span
                 font-family: Courgette-Regular
                 font-size: 30px 
+                @include media-breakpoint-down(lg)
+                    font-size: 15px
+                    text-align: center
     .menutext
+        .text-menu
+            @include media-breakpoint-down(lg)
+                font-size: 10px
         .cercle
             border: solid 0.08em #e0e1e4
             border-radius: 50%
             background-color: white
             font-size: 80px
             margin: 5px
+            height: 150px
+            @include media-breakpoint-down(lg)
+                font-size: 10px
+                margin: auto
+                height: 60px
         .prix
             background-color: #d3cfcf
             padding: 5px
             opacity: 0.8
             color: #B32A3A
+            @include media-breakpoint-down(lg)
+                font-size: 10px
