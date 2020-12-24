@@ -20375,6 +20375,22 @@ header .carousel .carousel-indicators li {
   }
 }
 
+@media (max-width: 767.98px) {
+  .section1 .menutext .text-menu {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .section1 .menutext .text-menu h5 {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+}
+
 .section1 .menutext .cercle {
   border: solid 0.08em #e0e1e4;
   border-radius: 50%;
@@ -20392,6 +20408,13 @@ header .carousel .carousel-indicators li {
   }
 }
 
+@media (max-width: 767.98px) {
+  .section1 .menutext .coffee img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .section1 .menutext .prix {
   background-color: #d3cfcf;
   padding: 5px;
@@ -20401,7 +20424,7 @@ header .carousel .carousel-indicators li {
 
 @media (max-width: 767.98px) {
   .section1 .menutext .prix {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 
@@ -20441,7 +20464,6 @@ header .carousel .carousel-indicators li {
 
 @media (max-width: 767.98px) {
   .section2 .chefs {
-    width: 380px;
     display: block;
   }
 }
@@ -20466,7 +20488,7 @@ header .carousel .carousel-indicators li {
 
 @media (max-width: 767.98px) {
   .section2 .chefs img {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -20483,7 +20505,7 @@ header .carousel .carousel-indicators li {
 .section3 form {
   background-image: url("../images/book_table_bg.jpg");
   width: 65%;
-  height: 50vh;
+  height: 40vh;
   margin: 0 auto;
   border-radius: 5%;
 }
