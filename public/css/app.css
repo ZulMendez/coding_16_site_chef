@@ -20296,7 +20296,6 @@ header .carousel .carousel-indicators li {
 
 .section1 .story {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .section1 .story h2 {
@@ -20617,11 +20616,10 @@ header .carousel .carousel-indicators li {
   font-size: 16px;
   top: 50%;
   left: 50%;
-  transform: translate(15%, -50%);
+  transform: translate(0%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 16px;
-  margin: 0px 0px 0 50px;
   border-radius: 8px;
   text-align: center;
 }
@@ -20631,7 +20629,6 @@ header .carousel .carousel-indicators li {
     margin: auto;
     font-size: 20px;
     right: auto;
-    display: flex;
   }
 }
 
@@ -20810,6 +20807,13 @@ footer .insta img {
   height: 100px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer .insta img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 footer .tags {
   font-family: Ubuntu-Regular;
 }
@@ -20817,6 +20821,12 @@ footer .tags {
 @media (max-width: 1199.98px) {
   footer .tags {
     text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  footer .tags button {
+    background-color: #000;
   }
 }
 
