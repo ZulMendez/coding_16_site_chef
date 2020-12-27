@@ -46,18 +46,22 @@
                     text-align: center
     .menutext
         @include media-breakpoint-only(md)
-            margin-left: 80px
+            // margin-left: 80px
             margin-bottom: 100px
         .text-menu
             @include media-breakpoint-down(sm)
-                margin-left: 10px
+                // margin-left: 10px
                 display: flex 
                 justify-content: center
                 align-items: center
+                flex-direction: column
             h5
-                @include media-breakpoint-only(sm)
-                    margin-right: 20px
+                @include media-breakpoint-down(sm)
                     font-weight: bold
+                    font-size: 13px
+            p
+                @include media-breakpoint-down(sm)
+                    font-size: 10px
         .cercle
             border: solid 0.08em #e0e1e4
             border-radius: 50%

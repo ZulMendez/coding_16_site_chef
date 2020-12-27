@@ -20256,11 +20256,18 @@ header .navbar .liste a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header .navbar .liste {
+    font-size: 15px;
+    background-color: #c7121228;
+  }
+}
+
 header .navbar .liste:hover {
   background-color: #C12D3F;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   header .navbar .logo {
     display: none;
   }
@@ -20370,24 +20377,29 @@ header .carousel .carousel-indicators li {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section1 .menutext {
-    margin-left: 80px;
     margin-bottom: 100px;
   }
 }
 
 @media (max-width: 767.98px) {
   .section1 .menutext .text-menu {
-    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .section1 .menutext .text-menu h5 {
-    margin-right: 20px;
     font-weight: bold;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section1 .menutext .text-menu p {
+    font-size: 10px;
   }
 }
 
@@ -20505,22 +20517,13 @@ header .carousel .carousel-indicators li {
 .section3 form {
   background-image: url("../images/book_table_bg.jpg");
   width: 65%;
-  height: 40vh;
   margin: 0 auto;
   border-radius: 5%;
-}
-
-@media (max-width: 767.98px) {
-  .section3 form {
-    height: 80vh;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section3 form {
     width: 100%;
-    height: 100%;
-    height: 30vh;
   }
 }
 
@@ -20564,6 +20567,16 @@ header .carousel .carousel-indicators li {
   margin: 20px;
 }
 
+@media (max-width: 991.98px) {
+  .section3 .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
 .section3 .blog img {
   border-radius: 5%;
   border: solid 0.3em lightgrey;
@@ -20593,7 +20606,14 @@ header .carousel .carousel-indicators li {
   }
 }
 
-.section3 .blog button {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section3 .blog .textblog2 {
+    opacity: 0.7;
+    font-size: 17px;
+  }
+}
+
+.section3 .blog .date {
   font-size: 16px;
   top: 50%;
   left: 50%;
@@ -20606,25 +20626,37 @@ header .carousel .carousel-indicators li {
   text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .section3 .blog button {
+@media (max-width: 991.98px) {
+  .section3 .blog .date {
     margin: auto;
     font-size: 20px;
     right: auto;
+    display: flex;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .section3 .blog button {
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+@media (max-width: 767.98px) {
+  .section3 .blog .date button {
+    font-size: 10px;
   }
 }
 
-.section3 .blog .date {
+@media (max-width: 767.98px) {
+  .section3 .blog .date span {
+    font-size: 10px;
+  }
+}
+
+.section3 .blog .more {
   margin-bottom: 50px;
   border-radius: 30px;
   margin: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .section3 .blog .more {
+    font-size: 15px;
+  }
 }
 
 .section4.client {
@@ -20683,6 +20715,17 @@ header .carousel .carousel-indicators li {
   }
 }
 
+.section5 .contact {
+  width: 40%;
+  margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  .section5 .contact {
+    width: 60%;
+  }
+}
+
 .section5 .contact h2 {
   font-family: Courgette-Regular;
   color: #B32A3A;
@@ -20712,8 +20755,20 @@ header .carousel .carousel-indicators li {
   color: white;
 }
 
+@media (max-width: 767.98px) {
+  .section5 .contact .icones i {
+    font-size: 30px;
+  }
+}
+
 .section5 .contact .icones p {
   color: white;
+}
+
+@media (max-width: 767.98px) {
+  .section5 .contact .icones p {
+    font-size: 13px;
+  }
 }
 
 .section5 .contact .icones hr {
